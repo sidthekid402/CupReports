@@ -3,7 +3,7 @@
   <head>  
   </head>
   <body>
-	<form method="post">
+	<form method="post" id="INPUT">
 		<fieldset>
     	<legend>Police information:</legend>
 	  		Location:<br>
@@ -18,9 +18,9 @@
 		<script>
 		function formChanged() 
 		{
-    		var location = document.getElementById("Location");
-    		var incident = document.getElementById("Incident");
-    		var description = document.getElementById("description");
+    		var location = document.getElementById("Location").value;
+    		var incident = document.getElementById("Incident").value;
+    		var description = document.getElementById("description").value;
     		
 		}
 		</script>
