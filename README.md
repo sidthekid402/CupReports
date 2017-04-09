@@ -3,14 +3,14 @@
 #### Languages used: HTML, CSS, JavaScript
 #### APIs used: Google Maps JS API, Google Maps Geocoding API, Google Firebase API
 
-Google Maps JS API - used for displaying the map and accessing the map's data
+Google Maps JS API - used for displaying the map along with its data and accessing the map's data 
 
 Google Maps Geocoding API - used for converting the address text input into coordinates usable by the JS API (geocoding)
 
 Google Firebase API - used as data base for police logs of crimes/accidents, works in realtime, helped in displaying past logs, keeps a record of past logs effeciently on the cloud.
 
 #### What we did
-- Created an interactive website containing a toggleable map interface and another interface below for the police to input any crimes/accidents, specifying the location, type of incident, a description of the event and the severity of the event. All markers indicate some sort of logged event, this is all stored in the database and keeps a log of data for display. The markers, when clicked, display the details of the event.
+- Created an interactive website containing a toggleable map interface and another interface below for the police to input any crimes/accidents, specifying the location, type of incident, a description of the event and the severity of the event. Any police submission shows up as a marker at the specified location. All markers indicate some sort of logged event, data from this is all stored in the database keeping a log of data for display of past logs. The markers, when clicked, display the details of the event.
 
 #### Stuff to do
 
