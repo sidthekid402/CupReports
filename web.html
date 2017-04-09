@@ -28,32 +28,71 @@
   </head>
   <body>
     <div id="map"></div>
-    <script src="map.js"></script>
-    <script src="data.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARP8VgFbs-q4nsYv-OwGZxmbxIuj8fzeE&callback=initMap"
+   
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARP8VgFbs-q4nsYv-OwGZxmbxIuj8fzeE&libraries=visualization&callback=initMap"
     async defer></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
+    <p>Click the button to get your coordinates.</p>
 
 
+<script>
+
+
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBQxg8aXLmyjOqw6RNHGigXRlEUfvg3nGs",
+    authDomain: "yess-a6fae.firebaseapp.com",
+    databaseURL: "https://yess-a6fae.firebaseio.com",
+    projectId: "yess-a6fae",
+    storageBucket: "yess-a6fae.appspot.com",
+    messagingSenderId: "217509599920"
+  };
+  firebase.initializeApp(config);
+
+</script>
+    <script src="map.js"></script>
+ 
   <form method="post" id="INPUT">
   <fieldset>
     <legend>Police information:</legend>
       Location:<br>
-      <input type="text" name="Location" value="1234 World Ave"><br>
+      <input type="text" id="1" name="Location" value="1234 World Ave"><br>
       Incident:<br>
-      <input type="radio" name="Incident" value="Crime">Crime<br>
-      <input type="radio" name="Incident" value="Accident">Accident<br>
+      <input type="radio" id="2" name="Incident" value="Crime">Crime<br>
+      <input type="radio" id="3" name="Incident" value="Accident">Accident<br>
       Description:<br>
-      <input type="text" name="description" value="he was peeing"><br><br>
-      <input type="submit" value="Submit">
+      <input type="text" id="4" name="description" value="he was peeing"><br><br>
+      <button type="button" onclick="formChanged()">Submit</button>
   </fieldset>
   <script>
+
+  //snapshot 
+
   function formChanged() 
   {
-      var location = document.getElementById("Location");
-      var incident = document.getElementById("Incident");
-      var description = document.getElementById("description");
+      var database = firebase.database().ref();
+      var location = document.getElementById("1").value;
+
+      var incident;
+      if(document.getElementById("2").checked){
+        incident = document.getElementById("2").value;
+      }
+      else{
+        incident = document.getElementById("3").value;
+      }
+      var description = document.getElementById("4").value;
       
-  }
+      var data = {
+        loc: location,
+        inc: incident,
+        desc: description
+      }
+      database.push(data);
+
+
+}
+      
+  
   </script>
   </form>
   </body>
