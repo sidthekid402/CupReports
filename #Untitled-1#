@@ -1,0 +1,14 @@
+<form class="mui-form">
+  <legend>Title</legend>
+  <div class="mui-textfield">
+    <input type="text" placeholder="Input 1">
+  </div>
+  <div class="mui-textfield">
+    <input type="text" placeholder="Input 2">
+  </div>
+  <div class="mui-textfield">
+    <textarea placeholder="Textarea"></textarea>
+  </div>
+  <button type="submit" class="mui-btn mui-btn--raised">Submit</button>
+</form>
+
