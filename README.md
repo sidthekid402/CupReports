@@ -25,9 +25,9 @@ Google Firebase API - used as data base for police logs of crimes/accidents, wor
 - Collaboration through Github
 - Working with various Google API's
 - HTML/CSS/JavaScript (whole group had no experience with any web development prior to today) 
-  -LOTS of syntax learned (the hard way...)
+  - LOTS of syntax learned (the hard way...)
 - Server side programming through firebase
- -Was a pain at first, but got used to it
+ - Was a pain at first, but got used to it
 - Working with JSON files
 - Time management + task splitting
 - Staying awake on pure sugar
