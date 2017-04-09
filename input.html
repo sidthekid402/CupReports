@@ -1,32 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>  
-  	<style>
-  		 body{
-       	  background-image: url("https://zellox.com/wp-content/uploads/2016/05/image-background-color-5.jpg")
-       }
-  	</style>
   </head>
   <body>
-	<form method="post">
+	<form method="post" id="INPUT">
 		<fieldset>
     	<legend>Police information:</legend>
 	  		Location:<br>
-	  		<input type="text" id="Location" value=""><br>
+	  		<input type="text" name="Location" value="1234 World Ave"><br>
 	  		Incident:<br>
-	  		<input type="radio" id="Incident" value="Crime">Crime<br>
-	  		<input type="radio" id="Incident" value="Accident">Accident<br>
+	  		<input type="radio" name="Incident" value="Crime">Crime<br>
+	  		<input type="radio" name="Incident" value="Accident">Accident<br>
 	  		Description:<br>
-	  		<input type="text" id="description" value=""><br><br>
-	  		<button type="button" onclick="formChanged()">Submit</button>
+	  		<input type="text" name="description" value="he was peeing"><br><br>
+	  		<input type="submit" value="Submit">
 		</fieldset>
 		<script>
 		function formChanged() 
 		{
-    		var loc = document.getElementById("Location").value;
-    		var inc = document.getElementById("Incident").value;
-    		var des = document.getElementById("description").value;
-    		alert("Thanks for submitting information!");
+    		var location = document.getElementById("Location").value;
+    		var incident = document.getElementById("Incident").value;
+    		var description = document.getElementById("description").value;
+    		
 		}
 		</script>
 	</form>
