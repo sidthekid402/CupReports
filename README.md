@@ -32,7 +32,7 @@ Google Firebase API - used as data base for police logs of crimes/accidents, wor
 - Time management + task splitting
 - Staying awake on pure sugar
 
-### All in all, this was a great learning experience for the whole group, as it was mostly everyone's first hackathon
+### All in all, this was a great learning experience for the whole group, as this was most of our first hackathons
 
 
 
