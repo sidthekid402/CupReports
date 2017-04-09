@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>  
+  </head>
+  <body>
+	<form method="post">
+		<fieldset>
+    	<legend>Police information:</legend>
+	  		Location:<br>
+	  		<input type="text" name="Location" value="1234 World Ave"><br>
+	  		Incident:<br>
+	  		<input type="radio" name="Incident" value="Crime">Crime<br>
+	  		<input type="radio" name="Incident" value="Accident">Accident<br>
+	  		Description:<br>
+	  		<input type="text" name="description" value="he was peeing"><br><br>
+	  		<input type="submit" value="Submit">
+		</fieldset>
+		<script>
+		function formChanged() 
+		{
+    		var location = document.getElementById("Location");
+    		var incident = document.getElementById("Incident");
+    		var description = document.getElementById("description");
+    		
+		}
+		</script>
+	</form>
+  </body>
+</html>
