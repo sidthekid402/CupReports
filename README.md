@@ -10,6 +10,7 @@ Google Firebase API - used as data base for police logs of crimes/accidents, wor
 
 #### Stuff to do
 
+- User Authentication (OAuth) to ensure that only trusted individuals can edit the data and others can only view the data
 - Keep track of time in program, allowing for only recent entries to be shown and old ones to be deleted from the database
 - Cluster data when zoomed out enough, allowing for cleaner data visualization (heatmap from api or markerclusters)
 - Publish accessible website
