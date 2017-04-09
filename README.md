@@ -1,5 +1,6 @@
 # mata {data + maps}
 ## Website that allows police/trusted officials to report crimes/accidents in the area of cupertino (works globally though)
+#### Languages used: HTML, CSS, JavaScript
 #### APIs used: Google Maps JS API, Google Maps Geocoding API, Google Firebase API
 
 Google Maps JS API - used for displaying the map and accessing the map's data
