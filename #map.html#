@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #iframe {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+    <h3>
+    	
+    	<font face="Accidents and Traffic in Cupertino" size="6">Accidents and Traffic in Cupertino</font><br />
+    </h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('iframe'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJq3fTG1e0j4ARtHjho-E_TTk&key=AIzaSyA0Lx2Zric8XQ-16YDwD_dRGiPueqWcdxc" allowfullscreen>
+    </script>
+    <iframe width="1200" height="1000" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJq3fTG1e0j4ARtHjho-E_TTk&key=AIzaSyA0Lx2Zric8XQ-16YDwD_dRGiPueqWcdxc" allowfullscreen></iframe>
+  </body>
+</html>
