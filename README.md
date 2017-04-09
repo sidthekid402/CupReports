@@ -8,12 +8,17 @@ Google Maps Geocoding API - used for converting the address text input into coor
 
 Google Firebase API - used as data base for police logs of crimes/accidents, works in realtime, helped in displaying past logs, keeps a record of past logs effeciently on the cloud.
 
+#### What we did
+- Created an interactive website containing a toggleable map interface and another interface below for the police to input any crimes/accidents, specifying the location, type of incident, a description of the event and the severity of the event. All markers indicate some sort of logged event, this is all stored in the database and keeps a log of data for display. The markers, when clicked, display the details of the event.
+
 #### Stuff to do
 
 - User Authentication (OAuth) to ensure that only trusted individuals can edit the data and others can only view the data
 - Keep track of time in program, allowing for only recent entries to be shown and old ones to be deleted from the database
 - Cluster data when zoomed out enough, allowing for cleaner data visualization (heatmap from api or markerclusters)
+- Add preset descriptions/filler data for quick input
 - Publish accessible website
+
 
 #### Things learned
 - Collaboration through Github
