@@ -11,11 +11,14 @@
         height: 75%;
       }
       #INPUT{
-        h2 {
         position: static;
         left: 100px;
         top: 150px;
-        }
+        background-color: red; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(left, red , white); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(right, red, white); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(right, red, white); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to right, red , white); /* Standard syntax */
       }
       /* Optional: Makes the sample page fill the window. */
       html, body {
@@ -28,12 +31,11 @@
   </head>
   <body>
     <div id="map"></div>
-<<<<<<< HEAD
    
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARP8VgFbs-q4nsYv-OwGZxmbxIuj8fzeE&libraries=visualization&callback=initMap"
     async defer></script>
     <script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
-    <p>Click the button to get your coordinates.</p>
+   
 
 
 <script>
@@ -66,7 +68,9 @@
       <button type="button" onclick="formChanged()">Submit</button>
   </fieldset>
   <script>
-
+  </script>
+  </form>
+  <script>
   //snapshot 
 
   function formChanged() 
@@ -78,8 +82,11 @@
       if(document.getElementById("2").checked){
         incident = document.getElementById("2").value;
       }
-      else{
+      else if(document.getElementById("3").checked){
         incident = document.getElementById("3").value;
+      }
+      else{
+        incident = "Incident not specified"
       }
       var description = document.getElementById("4").value;
       
@@ -98,7 +105,3 @@
   </form>
   </body>
 </html>
-=======
-    <script src="map.js"></script>
-
->>>>>>> origin/master
