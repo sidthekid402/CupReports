@@ -19,9 +19,9 @@ function initMap() {
      var contentString = '<div id="content">'+
             '<div id="siteNotice">'+
             '</div>'+
-            '<h1 id="firstHeading" class="firstHeading">' + getData.loc + '</h1>'+
+            '<h2 id="firstHeading" class="firstHeading">' + getData.loc + '</h2>'+
             '<div id="bodyContent">'+
-            '<p><b>' + getData.inc + '</b>-' + getData.desc +'</p>'+
+            '<h3><b>' + getData.inc + '</b>-' + getData.desc +'</h3>'+
             '</div>'+
             '</div>';
      //geoencode to get lat/long
